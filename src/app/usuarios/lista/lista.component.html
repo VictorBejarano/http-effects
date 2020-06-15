@@ -21,7 +21,7 @@
   </div>
 </div>
 
-<div class="card-columns" *ngIf="!loading">
+<div class="card-columns" *ngIf="!loading && !error">
     <div class="card" *ngFor="let user of usuarios">
       <img [src]="user.avatar" class="card-img-top">
       <div class="card-body">
