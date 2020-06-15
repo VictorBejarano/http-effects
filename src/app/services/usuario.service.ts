@@ -18,4 +18,13 @@ export class UsuarioService {
       })
     );
   }
+
+  getUserById(id: string) {
+    return this.http.get(`${this.url}/users/${id}`).pipe(
+      map((resp) => {
+        // tslint:disable-next-line: no-string-literal
+        return resp['data'];
+      })
+    );
+  }
 }
