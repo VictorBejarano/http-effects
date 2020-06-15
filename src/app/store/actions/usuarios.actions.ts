@@ -18,7 +18,7 @@ export class CargarUsuariosFail implements Action {
 export class CargarUsuariosSuccess implements Action {
   readonly type = CARGAR_USUARIOS_SUCCESS;
 
-  constructor(public Usuarios: Usuario[]) {}
+  constructor(public usuarios: Usuario[]) {}
 }
 
 export type usuariosAcciones =
